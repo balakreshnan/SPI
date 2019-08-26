@@ -1,0 +1,62 @@
+# dockerfile should be lower case for linux
+sudo docker build . -t xgbsample:latest
+
+
+sudo docker run -d -p 5000:5000 xgbsample
+
+sudo docker ps -a
+
+
+docker build "C:\Users\vmadmin\PycharmProjects\xgboostinterfence"
+
+
+docker build "/home/vmadmin/walgreens"
+
+
+sudo docker images -a | grep "xgbsample" | awk '{print $3}' | xargs docker rmi
+
+
+sudo docker logs containerid
+
+list containers 
+
+sudo docker ps -a
+
+sudo docker stop continerid
+
+ sudo docker rm 9e80976f3c7c
+
+ sudo docker images -a
+
+sudo docker rmi ae45260c317b
+
+
+http://104.46.0.38:5000/predict?at=23.25&v=71.29&ap=1008.25&rh=71.36
+
+
+sudo telnet dsvmlinux 5000
+GET /predict?at=23.25&v=71.29&ap=1008.25&rh=71.36
+
+
+sudo docker build /data/home/vmadmin/pythonpickle/ -t rocksample:latest
+
+sudo docker run -d -p 80:80 rocksample
+
+sudo docker logs f32d4cb6315b -f
+
+sudo docker stop f32d4cb6315b
+
+sudo docker rm f32d4cb6315b
+
+sudo docker images -a
+sudo docker rmi 56b89a9033c5
+
+sudo telnet dsvmlinux 80
+GET /predict?Price=13500&Age=50&KM=56986&FuelType=Diesel&HP=90&MetColor=1&Automatic=0&CC=2000&Doors=4&Weight=1165
+
+http://127.0.0.1/predict?Price=13500.0&Age=50.0&KM=56986.0&FuelType=Diesel&HP=90&MetColor=1&Automatic=0&CC=2000&Doors=4&Weight=1165
+
+
+sudo docker system prune -a
+
+
